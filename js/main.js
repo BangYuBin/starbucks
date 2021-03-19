@@ -32,3 +32,12 @@ window.addEventListener('scroll', _.throttle(function(){
     }) 
   }
 },300))
+
+// visual section fade in animation
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+fadeEls.forEach(function(fadeEl, index){
+  gsap.to(fadeEl, 1, {
+    delay: (index+1)*.7, //요소마다 다른 딜레이를 줘서 순차적으로 나타나는 효과 구현
+    opacity : 1
+  });
+});
