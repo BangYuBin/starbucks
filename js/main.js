@@ -43,8 +43,27 @@ fadeEls.forEach(function(fadeEl, index){
 });
 
 // swiper slide
+// notice-line slide
 new Swiper('.notice-line .swiper-container', {
   direction : 'vertical',
   autoplay : true,
   loop : true
+});
+//promotion slide
+new Swiper('.promotion .swiper-container',{
+  slidesPerView:3,
+  spaceBetween :10,
+  centeredSlides : true,
+  loop : true,
+  autoplay : {
+    delay : 5000
+  },
+  pagination:{
+    el:'.swiper-pagination',
+    clickable : true
+  },
+  navigation:{
+    prevEl :'.swiper-prev' ,
+    nextEl: '.swiper-next'
+  }
 });
