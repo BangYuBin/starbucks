@@ -381,6 +381,11 @@ header .badges .badge{
   height: 693px;
   background-color: #f6f5ef;
 }
+.notice .promotion.hide{
+  height: 0px;
+  transition: height .4s;
+  overflow: hidden;
+}
 .notice .promotion .swiper-container{
   width: calc(819px * 3 + 20px);
   height: 553px;
