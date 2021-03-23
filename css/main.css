@@ -43,7 +43,7 @@ a{
 }
 .btn.btn--reverse:hover{
   background-color: transparent;
-  color : #fff;
+  color : #333;
 }
 .btn.btn--brown{
   color : #592b18;
